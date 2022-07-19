@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Z A D Al_Kair</string>
+    <string name="logo">Reduce Food Waste</string>
+
+    <string name="first_slide_description">Help us reduce food waste and pollution. </string>
+    <string name="second_slide_description">We have excess food from trusted restaurants.</string>
+    <string name="third_slide_description">Sell or donate your food to the community for free</string>
+    <string name="let_get_start">let\'s get start</string>
+    <string name="tittle_type_user">Are you?</string>
+    <string name="association">association</string>
+    <string name="consumer">consumer</string>
+    <string name="restaurant">restaurant</string>
+
+
+</resources>

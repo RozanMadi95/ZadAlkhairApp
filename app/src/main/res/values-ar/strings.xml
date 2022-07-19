@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"زاد الخير "</string>
+    <string name="logo">"الحد من هدر الطعام"</string>
+    <string name="first_slide_description">ساعدنا في تقليل هدر الطعام والتلوث</string>
+    <string name="second_slide_description">لدينا طعام فائض من مطاعم موثوقة</string>
+    <string name="third_slide_description">بع  طعامك أو تبرع به للمجتمع مجانا</string>
+    <string name="let_get_start">لنبدأ</string>
+    <string name="tittle_type_user">هل انت؟</string>
+    <string name="association">مؤسسة خيرية</string>
+    <string name="consumer">مستهلك</string>
+    <string name="restaurant">مطعم</string>
+
+</resources>
