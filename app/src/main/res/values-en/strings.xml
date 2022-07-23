@@ -18,5 +18,10 @@
     <string name="do_not_have_an_account_signup">Do not have an account? SignUp</string>
     <string name="or">OR</string>
     <string name="sign_in_with">SignIn with</string>
+    <string name="ForgetPassword">Forget Password</string>
+    <string name="Email_or_Phone_number">Email or Phone number</string>
+    <string name="Reset">Reset</string>
+    <string name="already_have_account">Already Have Account ?</string>
+    <string name="login_here">login here</string>
 
 </resources>

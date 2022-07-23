@@ -51,9 +51,6 @@
                     android:paddingBottom="@dimen/_10sdp"
                     app:hintTextColor="@color/dark"
                     app:boxStrokeColor="@color/dark">
-
-
-
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/loginEtPhone"
                         android:layout_width="match_parent"

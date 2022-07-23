@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_edit_text_shape.xml" value="0.1225" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape.xml" value="0.1425" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape_button.xml" value="0.112" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape_button_phone.xml" value="0.112" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_password.xml" value="0.112" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_phone.xml" value="0.112" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_forgot_password_screen.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_login_screen.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_main.xml" value="0.128125" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.1265625" />

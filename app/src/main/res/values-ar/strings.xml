@@ -17,6 +17,11 @@
     <string name="or">او</string>
     <string name="do_not_have_an_account_signup">لا تملك حساب؟ تسجيل</string>
     <string name="sign_in_with">تسجيل ب</string>
+    <string name="ForgetPassword">نسيت كلمة المرور</string>
+    <string name="Email_or_Phone_number">الايميل أو رقم الجوال</string>
+    <string name="Reset">استعادة</string>
+    <string name="already_have_account">هل تملك حساب ؟</string>
+    <string name="login_here">"تسجيل دخول "</string>
 
 
 </resources>
