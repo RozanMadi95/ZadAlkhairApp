@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/slider_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sf" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/slider_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/normal"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/first_slide_description"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="@+id/slider_image"
+        app:layout_constraintStart_toStartOf="@+id/slider_image"
+        app:layout_constraintTop_toBottomOf="@+id/slider_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

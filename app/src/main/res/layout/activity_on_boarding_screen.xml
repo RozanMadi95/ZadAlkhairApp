@@ -4,6 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.OnBoardingScreen">
+    tools:context=".activity.OnBoardingScreen"
+    android:background="@color/green_lite"
+    android:padding="@dimen/_20sdp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/get_start_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dots" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        android:text="@string/let_get_start"
+        android:textColor="@color/green_lite"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/slider"
+        app:layout_constraintStart_toStartOf="@id/slider"
+        app:layout_constraintTop_toBottomOf="@id/slider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
