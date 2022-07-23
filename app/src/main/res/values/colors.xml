@@ -16,5 +16,8 @@
     <color name="purple">#7C377C</color>
     <color name="rec_page_select">#96C635</color>
     <color name="rec_page_no_select">#EBECF5</color>
+    <color name="hint">#A2C88A</color>
+    <color name="hint2">#7AB952</color>
+    <color name="hint3">#00000000</color>
 
 </resources>

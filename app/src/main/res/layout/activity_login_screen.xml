@@ -1,8 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginScreen">
+    tools:context=".activity.LoginScreen"
+    android:background="@color/hint">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_280sdp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/green_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_logo"
+                android:scaleType="center"
+                android:contentDescription="@string/logo" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_400sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_210sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_21sdp"
+                android:background="@drawable/background_shape"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_16sdp"
+                android:layout_gravity="center_horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    app:hintTextColor="@color/dark"
+                    app:boxStrokeColor="@color/dark">
+
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/loginEtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/hint3"
+                        android:textColorHint="@color/normal"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="@string/phone"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/dark"
+                    app:hintTextColor="@color/dark"
+                    app:boxStrokeColor="@color/dark">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/loginEtPassword"
+                        android:backgroundTint="@color/hint3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:textColorHint="@color/normal"
+                        android:drawableStart="@drawable/ic_password"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/loginTVForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="end"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/normal"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/background_shape_button"
+                    android:text="@string/login"
+                    android:textSize="@dimen/_19ssp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/loginTVSingUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/do_not_have_an_account_signup"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="@dimen/_103sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@color/dark" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/loginTVOR"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:text="@string/or"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TableRow
+                        android:layout_width="@dimen/_103sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@color/dark" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/loginSignInWith"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/sign_in_with"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/_11ssp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/loginButtonPhone"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/background_shape_button_phone"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_phone" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

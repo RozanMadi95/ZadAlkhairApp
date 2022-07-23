@@ -10,5 +10,13 @@
     <string name="association">مؤسسة خيرية</string>
     <string name="consumer">مستهلك</string>
     <string name="restaurant">مطعم</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="or">او</string>
+    <string name="do_not_have_an_account_signup">لا تملك حساب؟ تسجيل</string>
+    <string name="sign_in_with">تسجيل ب</string>
+
 
 </resources>

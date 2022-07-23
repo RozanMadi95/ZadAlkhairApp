@@ -11,6 +11,12 @@
     <string name="association">association</string>
     <string name="consumer">consumer</string>
     <string name="restaurant">restaurant</string>
-
+    <string name="phone">phone</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="do_not_have_an_account_signup">Do not have an account? SignUp</string>
+    <string name="or">OR</string>
+    <string name="sign_in_with">SignIn with</string>
 
 </resources>
