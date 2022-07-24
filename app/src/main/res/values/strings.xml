@@ -27,7 +27,7 @@
     <string name="home">الصفحة الرئيسية</string>
     <string name="userName"> اسم المستخدم</string>
     <string name="Restaurants">المطعام</string>
-    <string name="meals">الوجبات</string>
+    <string name="meals">"الوجبات المتاحة "</string>
     <string name="restaurant_name">اسم المطعم</string>
     <string name="address">غزة_مش عارف</string>
     <string name="meals_name">اسم الوجبة</string>
