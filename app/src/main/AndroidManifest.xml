@@ -10,16 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZadAlkhairApp">
         <activity
+            android:name=".consumer.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ForgotPasswordScreen"
             android:exported="false"
-            android:theme="@style/NoTitle"/>
+            android:theme="@style/NoTitle" />
         <activity
             android:name=".activity.SignupScreen"
             android:exported="false" />
         <activity
             android:name=".activity.LoginScreen"
             android:exported="false"
-            android:theme="@style/NoTitle"/>
+            android:theme="@style/NoTitle" />
         <activity
             android:name=".activity.TypeUserScreen"
             android:exported="false" />

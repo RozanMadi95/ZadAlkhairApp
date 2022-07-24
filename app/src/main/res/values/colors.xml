@@ -20,5 +20,8 @@
     <color name="hint2">#7AB952</color>
     <color name="hint3">#00000000</color>
     <color name="forgot">#A7CB81</color>
+    <color name="background">#EEF0EF</color>
+    <color name="itemIconTint">#909E95</color>
+
 
 </resources>

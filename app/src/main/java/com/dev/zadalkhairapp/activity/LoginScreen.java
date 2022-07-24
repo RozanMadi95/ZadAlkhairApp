@@ -10,8 +10,8 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.dev.zadalkhairapp.MainActivity;
 import com.dev.zadalkhairapp.R;
+import com.dev.zadalkhairapp.consumer.MainActivity;
 import com.google.android.material.textfield.TextInputEditText;
 
 

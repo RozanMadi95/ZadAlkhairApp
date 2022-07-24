@@ -23,5 +23,9 @@
     <string name="Reset">Reset</string>
     <string name="already_have_account">Already Have Account ?</string>
     <string name="login_here">login here</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
 
 </resources>

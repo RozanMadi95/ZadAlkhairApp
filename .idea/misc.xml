@@ -12,11 +12,17 @@
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_forgot_password_screen.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_login_screen.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_main.xml" value="0.128125" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_main2.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.1265625" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_signup_screen.xml" value="0.2609375" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_splash_screen.xml" value="0.1140625" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_type_user_screen.xml" value="0.1265625" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_cart.xml" value="0.275" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_favorite.xml" value="0.275" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_home.xml" value="0.275" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_profile.xml" value="0.2609375" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/slides_layout.xml" value="0.275" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/menu/consumer_bottom_navigation.xml" value="0.275" />
       </map>
     </option>
   </component>
