@@ -28,15 +28,17 @@ tools:context=".consumer.MainActivity">
         app:abb_indicatorAppearance="round"
         app:abb_indicatorHeight="4dp"
         app:abb_indicatorMargin="16dp"
-        app:abb_rippleColor="@color/dark"
+        app:abb_rippleColor="@color/appBar"
         app:abb_rippleEnabled="true"
         app:abb_selectedTabType="text"
+        app:abb_badgeBackgroundColor="@color/appBar"
         app:abb_tabColor="@color/itemIconTint"
-        app:abb_tabColorSelected="@color/dark"
+        app:abb_tabColorSelected="@color/appBar"
+        app:abb_indicatorColor="@color/appBar"
+        app:abb_indicatorLocation="top"
         app:abb_tabs="@menu/tabs_consumer_bottom_navigation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 

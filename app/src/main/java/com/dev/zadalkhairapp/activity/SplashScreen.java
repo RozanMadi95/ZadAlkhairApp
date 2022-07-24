@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dev.zadalkhairapp.R;
+import com.dev.zadalkhairapp.consumer.MainActivity;
 
 public class SplashScreen extends AppCompatActivity {
     //تعريف المتغيرات
@@ -74,8 +75,10 @@ public class SplashScreen extends AppCompatActivity {
                             OnBoardingScreen.class)
                             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
                 }else {
+//                    startActivity(new Intent(SplashScreen.this,
+//                            TypeUserScreen.class));
                     startActivity(new Intent(SplashScreen.this,
-                            TypeUserScreen.class));
+                            MainActivity.class));
                 }
                 finish();
             },SPLASH_DURATION);

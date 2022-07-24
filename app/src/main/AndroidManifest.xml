@@ -11,7 +11,8 @@
         android:theme="@style/Theme.ZadAlkhairApp">
         <activity
             android:name=".consumer.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppNoActionBar" />
         <activity
             android:name=".activity.ForgotPasswordScreen"
             android:exported="false"
@@ -28,7 +29,8 @@
             android:exported="false" />
         <activity
             android:name=".activity.OnBoardingScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/NoTitle" />
         <activity
             android:name=".activity.SplashScreen"
             android:exported="true"
