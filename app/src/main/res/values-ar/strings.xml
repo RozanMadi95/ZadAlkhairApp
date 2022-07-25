@@ -37,6 +37,16 @@
     <string name="rite">ضلة</string>
     <string name="Empty_favourite_list">لا يوجد عناصر مفضلة</string>
     <string name="explore">اكتشف</string>
+    <string name="Meal_details">"تفاصيل الوجبة "</string>
+    <string name="Description">الشرح</string>
+    <string name="available_items">العناصر المتاحة</string>
+    <string name="expiry_date">"تاريخ  الانتهاء "</string>
+    <string name="delivery_options">"خيارات التوصيل "</string>
+    <string name="pick_up">"استلام من المطعم  "</string>
+    <string name="payment_options">خيارات الدفع</string>
+    <string name="cash">الدفع نقداً عند الاستلام</string>
+    <string name="Working_Hours">"ساعات العمل "</string>
+    <string name="Add_to_cart">اضف الى السلة</string>
 
 
 </resources>

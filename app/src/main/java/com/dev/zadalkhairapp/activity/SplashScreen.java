@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.dev.zadalkhairapp.R;
 import com.dev.zadalkhairapp.consumer.MainActivity;
+import com.dev.zadalkhairapp.consumer.MealDetailsActivity;
 
 public class SplashScreen extends AppCompatActivity {
     //تعريف المتغيرات
@@ -78,19 +79,10 @@ public class SplashScreen extends AppCompatActivity {
 //                    startActivity(new Intent(SplashScreen.this,
 //                            TypeUserScreen.class));
                     startActivity(new Intent(SplashScreen.this,
-                            MainActivity.class));
+                            MealDetailsActivity.class));
                 }
                 finish();
             },SPLASH_DURATION);
-
-
-
-
-
-
-
-
-
         }
 
         public void findViewById() {

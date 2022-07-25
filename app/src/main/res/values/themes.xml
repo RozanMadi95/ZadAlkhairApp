@@ -31,4 +31,13 @@
         <item name="colorAccent">@color/normal</item>
     </style>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/normal</item>
+        <item name="colorPrimaryDark">@color/dark</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

@@ -38,6 +38,16 @@
     <string name="rite">rite</string>
     <string name="Empty_favourite_list">Empty favourite list</string>
     <string name="explore">Explore</string>
+    <string name="Meal_details">Meal details</string>
+    <string name="Description">Description</string>
+    <string name="available_items">Available Items</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="delivery_options">Delivery Options</string>
+    <string name="pick_up">Pick up</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="cash">Cash</string>
+    <string name="Working_Hours">Working Hours</string>
+    <string name="Add_to_cart">Add to cart</string>
 
 
 </resources>

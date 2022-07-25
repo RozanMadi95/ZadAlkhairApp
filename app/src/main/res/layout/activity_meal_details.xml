@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_Fragment"
+    tools:context=".consumer.MealDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/meals_details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Meal_details"
+                android:textSize="@dimen/_17ssp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:textColor="@color/dark"
+                android:layout_marginStart="@dimen/_20sdp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageButton
+                android:id="@+id/details_meal_ImageButton_favorite"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/hint3"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/details_meal_favorite"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/favorite" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/details_meal_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/button_image_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meal_image" />
+
+            <TextView
+                android:id="@+id/details_meals_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meals_name"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/meals_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12ssp"
+                android:text="@string/price"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintStart_toEndOf="@+id/details_meals_name"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/details_meals_restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/restaurant_name"
+                android:textColor="@color/itemIconTint"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_name"
+                app:layout_constraintVertical_bias="0.473" />
+
+            <TextView
+                android:id="@+id/details_meals_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Description"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_restaurant_name" />
+
+            <TableLayout
+                android:id="@+id/details_meals_TableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_Description">
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <EditText
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        android:autofillHints=""
+                        android:inputType="number"
+                        tools:ignore="LabelFor" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/expiry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <EditText
+                        android:text="@string/expiry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        android:autofillHints=""
+                        android:inputType="date"
+                        tools:ignore="LabelFor"/>
+                </TableRow>
+                <TableRow>
+                <TextView
+                    android:text="@string/delivery_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_weight="1"
+                    android:layout_column="1" />
+                <EditText
+                    android:text="@string/pick_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:enabled="false"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    tools:ignore="LabelFor"/>
+            </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/payment_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <EditText
+                        android:text="@string/cash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1"
+                        android:enabled="false"
+                        android:autofillHints=""
+                        android:inputType="text"
+                        tools:ignore="LabelFor"/>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/details_meals_Working_Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Working_Hours"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_TableLayout" />
+
+            <TableLayout
+                android:id="@+id/details_meals_TableLayout_Working_Hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_Working_Hours">
+
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                    <TextView
+                        android:text="@string/available_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:layout_column="1" />
+                </TableRow>
+            </TableLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:text="@string/Add_to_cart"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/white"
+                android:background="@drawable/background_shape"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_TableLayout_Working_Hours"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
