@@ -34,5 +34,8 @@
     <string name="price">₪20</string>
     <string name="Favo">مف</string>
     <string name="rite">ضلة</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Empty_favourite_list">لا يوجد عناصر مفضلة</string>
+    <string name="explore">اكتشف</string>
 
 </resources>

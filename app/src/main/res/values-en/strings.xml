@@ -36,6 +36,8 @@
     <string name="price">₪20</string>
     <string name="Favo">Favo</string>
     <string name="rite">rite</string>
+    <string name="Empty_favourite_list">Empty favourite list</string>
+    <string name="explore">Explore</string>
 
 
 </resources>

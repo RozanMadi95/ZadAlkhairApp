@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     FavoriteFragment favoriteFragment = null;
     CartFragment cartFragment = null;
     ProfileFragment profileFragment = null;
+    EmptyFavouriteFragment emptyFavouriteFragment = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,16 +29,18 @@ public class MainActivity extends AppCompatActivity {
         favoriteFragment = FavoriteFragment.newInstance("","");
         cartFragment = CartFragment.newInstance("","");
         profileFragment = ProfileFragment.newInstance("","");
+        //test
+        emptyFavouriteFragment = EmptyFavouriteFragment.newInstance("","");
 
         bottomBar.selectTabById(R.id.consumerHome,true);
-        setFragmentToContainer(favoriteFragment);
+        setFragmentToContainer(homeFragment);
         bottomBar.setOnTabSelected(new Function1<AnimatedBottomBar.Tab, Unit>() {
             @Override
             public Unit invoke(AnimatedBottomBar.Tab tab) {
                 if (tab.getId() == R.id.consumerHome){
                     setFragmentToContainer(homeFragment);
                 }else if (tab.getId() == R.id.consumerFavorite){
-                    setFragmentToContainer(favoriteFragment);
+                    setFragmentToContainer(emptyFavouriteFragment);
 
                 }else if (tab.getId() == R.id.consumerCart){
                     setFragmentToContainer(cartFragment);

@@ -4,13 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".consumer.FavoriteFragment"
+    tools:context=".consumer.EmptyFavouriteFragment"
     android:background="@color/background_Fragment">
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
+        android:layout_height="@dimen/_60sdp"
         android:background="@color/white"
         android:elevation="@dimen/_2sdp"
         app:layout_anchor="@+id/toolbar"
@@ -53,23 +52,40 @@
 
 
     </androidx.appcompat.widget.Toolbar>
-
-    <ScrollView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/_60sdp"
-        android:orientation="vertical">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/consumerFavorite_rv_meals"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_marginEnd="@dimen/_5sdp"
         android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
-        tools:itemCount="6"
-        tools:listitem="@layout/item_favorite_meals" />
-    </ScrollView>
+        android:layout_marginTop="@dimen/_60sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Empty_favourite_list"
+            android:textColor="@color/itemIconTint"
+           android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:text="@string/explore"
+            android:textColor="@color/white"
+            android:background="@drawable/favorite_item_background"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

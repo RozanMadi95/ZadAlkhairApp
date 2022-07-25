@@ -23,6 +23,7 @@
     <color name="background">#EEF0EF</color>
     <color name="itemIconTint">#909E95</color>
     <color name="appBar">#0E4D2E</color>
+    <color name="background_Fragment">#E0EFDD</color>
 
 
 </resources>
