@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         profileFragment = ProfileFragment.newInstance("","");
 
         bottomBar.selectTabById(R.id.consumerHome,true);
-        setFragmentToContainer(homeFragment);
+        setFragmentToContainer(favoriteFragment);
         bottomBar.setOnTabSelected(new Function1<AnimatedBottomBar.Tab, Unit>() {
             @Override
             public Unit invoke(AnimatedBottomBar.Tab tab) {

@@ -34,6 +34,8 @@
     <string name="address">gaza_hhhh</string>
     <string name="meals_name">Meals name</string>
     <string name="price">₪20</string>
+    <string name="Favo">Favo</string>
+    <string name="rite">rite</string>
 
 
 </resources>

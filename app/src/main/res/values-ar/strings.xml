@@ -33,6 +33,8 @@
     <string name="address">غزة_مش عارف</string>
     <string name="meals_name">اسم الوجبة</string>
     <string name="price">₪20</string>
+    <string name="Favo">مف</string>
+    <string name="rite">ضلة</string>
 
 
 </resources>
