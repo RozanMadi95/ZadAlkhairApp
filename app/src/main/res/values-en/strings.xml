@@ -48,6 +48,10 @@
     <string name="cash">Cash</string>
     <string name="Working_Hours">Working Hours</string>
     <string name="Add_to_cart">Add to cart</string>
+    <string name="ok_meals">Item has been added Successfully</string>
+    <string name="positiv_btn">" ok"</string>
+    <string name="order">Order</string>
+    <string name="Empty_cart_list">Empty Cart List</string>
 
 
 </resources>

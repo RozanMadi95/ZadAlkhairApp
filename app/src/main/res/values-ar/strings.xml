@@ -47,6 +47,10 @@
     <string name="cash">الدفع نقداً عند الاستلام</string>
     <string name="Working_Hours">"ساعات العمل "</string>
     <string name="Add_to_cart">اضف الى السلة</string>
+    <string name="ok_meals">تم إضافة الوجبة بنجاح</string>
+    <string name="positiv_btn">موافق</string>
+    <string name="order">الطلبات</string>
+    <string name="Empty_cart_list">لا توجد طلبات</string>
 
 
 </resources>

@@ -7,12 +7,15 @@
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape.xml" value="0.1425" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape_button.xml" value="0.112" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape_button_phone.xml" value="0.112" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/background_shape_dialog_container.xml" value="0.2795" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/button_image_background.xml" value="0.1945" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/details_meal_favorite.xml" value="0.2795" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/dialog_add_cart_button_background.xml" value="0.2795" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/favorite_item_background.xml" value="0.2255" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/favoriteitem.xml" value="0.2795" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_cart.xml" value="0.2255" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_cart_menu.xml" value="0.2255" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_delete.xml" value="0.2205" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_favorite_meals.xml" value="0.2255" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_password.xml" value="0.112" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_phone.xml" value="0.112" />
@@ -26,13 +29,16 @@
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_signup_screen.xml" value="0.2609375" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_splash_screen.xml" value="0.1140625" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_type_user_screen.xml" value="0.1265625" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/dialog_add_cart.xml" value="0.264" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_cart.xml" value="0.275" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_empty_cart.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_empty_favourite.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_favorite.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_profile.xml" value="0.2609375" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_favorite_meals.xml" value="0.264" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_meals.xml" value="0.275" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_meals_cart.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_restaurant.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/slides_layout.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/menu/consumer_bottom_navigation.xml" value="0.275" />

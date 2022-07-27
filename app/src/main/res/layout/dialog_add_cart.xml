@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/layoutDialogContainer">
+<!--    android:background="@drawable/background_shape_dialog_container"-->
+
+    <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_logo" />
+<!--    android:textAppearance="@style/TextAppearance.AppCompat.Medium" -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_meals"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13ssp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_add_cart_buttonOk"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/dialog_add_cart_button_background"
+            android:text="@string/positiv_btn"
+            android:textColor="@color/normal"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
