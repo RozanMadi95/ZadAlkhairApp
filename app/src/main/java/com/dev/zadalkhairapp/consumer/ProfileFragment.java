@@ -2,11 +2,16 @@ package com.dev.zadalkhairapp.consumer;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import com.dev.zadalkhairapp.R;
 
@@ -25,6 +30,12 @@ public class ProfileFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    ListView listViewAccount, listViewOthers;
+    SearchView searchView;
+    ArrayAdapter<String> adapterAccount, adapterOthers;
+    String[] itemsAccount = {"Edit Profile","Change Password","Change Language"};
+    String[] itemsOthers = {"Privacy Policy","Terms & Conditions","Logout"};
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -61,6 +72,26 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+         View view = inflater.inflate(R.layout.fragment_profile, container, false);
+         listViewAccount =(ListView) view.findViewById(R.id.account_profile_listview);
+         listViewOthers =(ListView) view.findViewById(R.id.others_profile_listview);
+
+        adapterAccount = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_expandable_list_item_1, itemsAccount);
+        listViewAccount.setAdapter(adapterAccount);
+        listViewAccount.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getContext(), i+""+ view.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+        adapterOthers = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_expandable_list_item_1, itemsOthers);
+        listViewOthers.setAdapter(adapterOthers);
+        listViewOthers.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getContext(), i+"", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return view;
     }
 }

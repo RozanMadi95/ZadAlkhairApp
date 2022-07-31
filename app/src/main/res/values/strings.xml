@@ -52,5 +52,12 @@
     <string name="order">الطلبات</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="Empty_cart_list">لا توجد طلبات</string>
+    <string name="Account">الحساب</string>
+    <string name="Others">غيرها</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Edit_Profile">تعديل الملف الشخصي</string>
+    <string name="cancel">الغاء</string>
+    <string name="name">الاسم</string>
 
 </resources>

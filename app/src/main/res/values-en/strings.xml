@@ -52,6 +52,12 @@
     <string name="positiv_btn">" ok"</string>
     <string name="order">Order</string>
     <string name="Empty_cart_list">Empty Cart List</string>
+    <string name="Account">Account</string>
+    <string name="Others">Others</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="cancel">cancel</string>
+    <string name="name">name</string>
+
 
 
 </resources>

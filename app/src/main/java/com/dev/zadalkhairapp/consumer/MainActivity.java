@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ProfileFragment profileFragment = null;
     EmptyFavouriteFragment emptyFavouriteFragment = null;
     EmptyCartFragment emptyCartFragment = null;
+    EditProfileFragment editProfileFragment = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         //test
         emptyFavouriteFragment = EmptyFavouriteFragment.newInstance("","");
         emptyCartFragment = EmptyCartFragment.newInstance("","");
+        editProfileFragment = EditProfileFragment.newInstance("","");
 
 
         bottomBar.selectTabById(R.id.consumerHome,true);
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     setFragmentToContainer(emptyCartFragment);
 
                 }else if (tab.getId() == R.id.consumerProfile){
-                    setFragmentToContainer(profileFragment);
+                    setFragmentToContainer(editProfileFragment);
                 }
                 return null;
             }

@@ -51,6 +51,11 @@
     <string name="positiv_btn">موافق</string>
     <string name="order">الطلبات</string>
     <string name="Empty_cart_list">لا توجد طلبات</string>
+    <string name="Account">الحساب</string>
+    <string name="Others">غيرها</string>
+    <string name="Edit_Profile">تعديل الملف الشخصي</string>
+    <string name="cancel">الغاء</string>
+    <string name="name">الاسم</string>
 
 
 </resources>
