@@ -57,7 +57,14 @@
     <string name="Edit_Profile">Edit Profile</string>
     <string name="cancel">cancel</string>
     <string name="name">name</string>
-
+    <string name="Sign_up_to">Sign up to</string>
+    <string name="name_app">ZAD AL KAIR</string>
+    <string name="email">email</string>
+    <string name="aggree">By creating an account, you aggree to our Term and Conditions</string>
+    <string name="Sign_up">Sign up</string>
+    <string name="Already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="address_label">address</string>
 
 
 </resources>

@@ -23,7 +23,8 @@
             android:theme="@style/NoTitle" />
         <activity
             android:name=".activity.SignupScreen"
-            android:exported="false" />
+            android:exported="false"/>
+<!--            android:theme="@style/Theme.AppNoActionBar"-->
         <activity
             android:name=".activity.LoginScreen"
             android:exported="false"

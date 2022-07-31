@@ -56,6 +56,14 @@
     <string name="Edit_Profile">تعديل الملف الشخصي</string>
     <string name="cancel">الغاء</string>
     <string name="name">الاسم</string>
+    <string name="Sign_up_to">"التسجيل في "</string>
+    <string name="name_app">زاد الخير</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="aggree">من خلال إنشاء حساب ، فإنك توافق على الشروط والأحكام الخاصة بنا</string>
+    <string name="Sign_up">تسجيل</string>
+    <string name="Already_have_an_account">هل لديك حساب؟</string>
+    <string name="sign_in">قم بتسجيل الدخول</string>
+    <string name="address_label">العنوان</string>
 
 
 </resources>
