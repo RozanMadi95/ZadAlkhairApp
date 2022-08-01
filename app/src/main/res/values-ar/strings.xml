@@ -64,6 +64,11 @@
     <string name="Already_have_an_account">هل لديك حساب؟</string>
     <string name="sign_in">قم بتسجيل الدخول</string>
     <string name="address_label">العنوان</string>
+    <string name="Enter_Your_Name">ادخل اسمك</string>
+    <string name="Enter_your_phone_number">ادخل رقم جوالك</string>
+    <string name="Enter_valid_email">ادخل بريد صحيح</string>
+    <string name="Enter_valid_password">"ادخل كلمة مرور صحيحة لا تقل عن 7 "</string>
+    <string name="Enter_your_address_Enter_valid">ادخل عنوانك الصحيح</string>
 
 
 </resources>

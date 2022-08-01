@@ -13,13 +13,12 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/_10sdp">
+                android:layout_height="match_parent">
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:text="@string/Sign_up_to"
                     android:textAlignment="textStart"
                     android:textStyle="bold"
@@ -57,8 +56,7 @@
                             android:drawableStart="@drawable/ic_name"
                             android:drawablePadding="@dimen/_10sdp"
                             android:hint="@string/name"
-                            android:inputType="number"
-                            android:maxLength="10"
+                            android:inputType="textPersonName"
                             android:textColor="@color/black"
                             android:textColorHint="@color/normal" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -102,8 +100,7 @@
                             android:drawableStart="@drawable/ic_email"
                             android:drawablePadding="@dimen/_10sdp"
                             android:hint="@string/email"
-                            android:inputType="number"
-                            android:maxLength="10"
+                            android:inputType="textEmailAddress"
                             android:shadowColor="@color/black"
                             android:textColor="@color/black"
                             android:textColorHint="@color/black" />
@@ -126,8 +123,7 @@
                             android:drawableStart="@drawable/ic_location"
                             android:drawablePadding="@dimen/_10sdp"
                             android:hint="@string/address_label"
-                            android:inputType="number"
-                            android:maxLength="10"
+                            android:inputType="textPersonName"
                             android:textColor="@color/black"
                             android:textColorHint="@color/normal" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -154,34 +150,20 @@
                             android:textColor="@color/black"
                             android:textColorHint="@color/normal" />
                     </com.google.android.material.textfield.TextInputLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="@dimen/_20sdp"
-                        android:layout_marginStart="@dimen/_20sdp"
-                        android:layout_marginEnd="@dimen/_20sdp">
-
-                        <androidx.appcompat.widget.AppCompatCheckBox
+                    <androidx.appcompat.widget.AppCompatCheckBox
                             android:id="@+id/sign_up_CheckBox"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="start"
-                            />
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/sign_up_ch_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_20sdp"
                             android:text="@string/aggree"
                             android:textAlignment="textStart"
                             android:textStyle="bold"
                             android:textColor="@color/shadow_dark"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </LinearLayout>
+                            android:textSize="@dimen/_10ssp"
+                            android:checked="false"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"/>
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/sign_upButton"
                         android:layout_width="match_parent"

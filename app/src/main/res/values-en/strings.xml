@@ -65,6 +65,11 @@
     <string name="Already_have_an_account">Already have an account?</string>
     <string name="sign_in">Sign in</string>
     <string name="address_label">address</string>
+    <string name="Enter_Your_Name">Enter your name</string>
+    <string name="Enter_your_phone_number">Enter your phone number</string>
+    <string name="Enter_valid_email">Enter a valid email</string>
+    <string name="Enter_your_address_Enter_valid">Enter your valid address</string>
+    <string name="Enter_valid_password">Enter a valid password of at least 7</string>
 
 
 </resources>

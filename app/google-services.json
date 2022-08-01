@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723038798227",
+    "project_id": "zadalkhairapp-7487e",
+    "storage_bucket": "zadalkhairapp-7487e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723038798227:android:bf3bd2907e8e0f07b3e866",
+        "android_client_info": {
+          "package_name": "com.dev.zadalkhairapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723038798227-rg6rujpjd66512s27odds12ht7baajgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0xWXKiTwqR1nslIful_FXCfH7xqU856c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723038798227-rg6rujpjd66512s27odds12ht7baajgf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
