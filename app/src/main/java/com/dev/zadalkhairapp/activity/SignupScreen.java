@@ -9,13 +9,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.view.View;
 import android.widget.Toast;
 
 import com.dev.zadalkhairapp.R;
 import com.dev.zadalkhairapp.ReusableCodeForAll;
 
 import com.google.android.material.textfield.TextInputEditText;
+
+import java.util.Objects;
 
 
 public class SignupScreen extends AppCompatActivity {
@@ -28,7 +29,9 @@ public class SignupScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_screen);
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         findViewById();
         //checkBoxAgree.setOnClickListener(this);
 
@@ -37,12 +40,9 @@ public class SignupScreen extends AppCompatActivity {
         }
 
         btnSignUp.setOnClickListener(v-> signUpAccount());
-        tvSingIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(SignupScreen.this,LoginScreen.class));
-                finish();
-            }
+        tvSingIn.setOnClickListener(view -> {
+            startActivity(new Intent(SignupScreen.this,LoginScreen.class));
+            finish();
         });
     }
 
@@ -58,11 +58,11 @@ public class SignupScreen extends AppCompatActivity {
     }
 
     void signUpAccount(){
-         String name = etName.getText().toString().trim();
-         String phone = etPhone.getText().toString().trim();
-         String email = etEmail.getText().toString().trim();
-         String address = etAddress.getText().toString().trim();
-         String password = etPassword.getText().toString().trim();
+         String name = Objects.requireNonNull(etName.getText()).toString().trim();
+         String phone = Objects.requireNonNull(etPhone.getText()).toString().trim();
+         String email = Objects.requireNonNull(etEmail.getText()).toString().trim();
+         String address = Objects.requireNonNull(etAddress.getText()).toString().trim();
+         String password = Objects.requireNonNull(etPassword.getText()).toString().trim();
 
         validateData(name,phone,email ,address ,password);
 
