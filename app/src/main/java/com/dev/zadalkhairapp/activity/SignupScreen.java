@@ -35,7 +35,6 @@ import java.util.Objects;
 
 
 public class SignupScreen extends AppCompatActivity {
-    public static final String KEY_HASH_MAP_ROLE = "Role";
     TextInputEditText etPhone, etName, etEmail, etAddress, etPassword;
     AppCompatTextView tvSingIn;
     AppCompatButton btnSignUp;
@@ -132,7 +131,7 @@ public class SignupScreen extends AppCompatActivity {
                                                     builder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
                                                         @Override
                                                         public void onClick(DialogInterface dialog, int which) {
-                                                            startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_CONSUMER));
+                                                            startActivity(new Intent(SignupScreen.this, LoginScreen.class));
                                                                     Toast.makeText(SignupScreen.this, getResources().getString(R.string.consumer), Toast.LENGTH_SHORT).show();
                                                             dialog.dismiss();
                                                         }

@@ -60,8 +60,7 @@
                         android:drawableStart="@drawable/ic_email"
                         android:drawablePadding="@dimen/_10sdp"
                         android:hint="@string/email"
-                        android:inputType="number"
-                        android:maxLength="10"
+                        android:inputType="textEmailAddress"
                         android:textColor="@color/black"
                         android:textColorHint="@color/normal" />
                 </com.google.android.material.textfield.TextInputLayout>
