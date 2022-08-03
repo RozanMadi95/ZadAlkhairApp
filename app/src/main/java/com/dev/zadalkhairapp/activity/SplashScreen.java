@@ -27,7 +27,7 @@ public class SplashScreen extends AppCompatActivity {
     private SharedPreferences.Editor sharedPreferencesEditor;
     public static final String SP_NAME= "OnBoardingScreen";
     public static final String SP_KEY_FIRST_TIME= "FirstTime";
-    private static final int SPLASH_DURATION = 5000; // الوقت المحدد للانتظار في السبلاش = 5000 = 5ث
+    private static final int SPLASH_DURATION = 3000; // الوقت المحدد للانتظار في السبلاش = 3000 =3ث
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

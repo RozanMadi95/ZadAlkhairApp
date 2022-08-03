@@ -10,25 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZadAlkhairApp">
         <activity
+            android:name=".association.AssociationMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant.RestaurantMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".consumer.MealDetailsActivity"
             android:exported="false"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".consumer.MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppNoActionBar" />
+            android:exported="false" />
         <activity
             android:name=".activity.ForgotPasswordScreen"
             android:exported="false"
             android:theme="@style/NoTitle" />
         <activity
             android:name=".activity.SignupScreen"
-            android:exported="false"/>
-<!--            android:theme="@style/Theme.AppNoActionBar"-->
+            android:exported="false" /> <!-- android:theme="@style/Theme.AppNoActionBar" -->
         <activity
             android:name=".activity.LoginScreen"
-            android:exported="false"
-            android:theme="@style/NoTitle" />
+            android:exported="false" />
         <activity
             android:name=".activity.TypeUserScreen"
             android:exported="false" />

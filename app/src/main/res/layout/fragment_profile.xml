@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".consumer.ProfileFragment"
-    android:background="@color/hint">
+    android:background="@color/background_Fragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_60sdp"
+        android:layout_height="@dimen/_50sdp"
         android:background="@color/white"
         android:elevation="@dimen/_2sdp"
         app:layout_anchor="@+id/toolbar"
@@ -22,7 +22,7 @@
             android:gravity="center_vertical"
             android:text="@string/profile"
             android:textColor="@color/dark"
-            android:textSize="@dimen/_20ssp"
+            android:textSize="@dimen/_15ssp"
             android:layout_marginStart="@dimen/_10sdp"
             android:textStyle="bold"
             android:layout_marginTop="@dimen/_10sdp"
@@ -34,14 +34,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="@dimen/_60sdp">
+        android:layout_marginTop="@dimen/_50sdp">
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:text="@string/Account"
             android:textColor="@color/black"
-            android:background="@color/hint2"
+            android:background="@color/hint"
             android:textSize="@dimen/_15ssp"
             android:padding="@dimen/_10sdp"
             android:textStyle="bold" />
@@ -55,7 +55,7 @@
             android:gravity="center_vertical"
             android:text="@string/Others"
             android:textColor="@color/black"
-            android:background="@color/hint2"
+            android:background="@color/hint"
             android:textSize="@dimen/_15ssp"
             android:padding="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"

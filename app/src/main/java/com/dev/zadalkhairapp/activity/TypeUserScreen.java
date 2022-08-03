@@ -10,6 +10,10 @@ import android.view.View;
 import com.dev.zadalkhairapp.R;
 
 public class TypeUserScreen extends AppCompatActivity {
+    public static final String Name_INTENT_TYPE_USER = "TypeUser";
+    public static final String VALUE_INTENT_TYPE_USER_ASSOCIATION = "Association";
+    public static final String VALUE_INTENT_TYPE_USER_CONSUMER = "Consumer";
+    public static final String VALUE_INTENT_TYPE_USER_RESTAURANT = "Restaurant";
     CardView cvAssociation, cvConsumer, cvRestaurant;
 
     @Override
@@ -21,7 +25,7 @@ public class TypeUserScreen extends AppCompatActivity {
         cvAssociation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TypeUserScreen.this, LoginScreen.class));
+                startActivity(new Intent(TypeUserScreen.this, SignupScreen.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_ASSOCIATION));
                 finish();
             }
         });
@@ -29,7 +33,7 @@ public class TypeUserScreen extends AppCompatActivity {
         cvConsumer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TypeUserScreen.this, LoginScreen.class));
+                startActivity(new Intent(TypeUserScreen.this, SignupScreen.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_CONSUMER));
                 finish();
             }
         });
@@ -37,7 +41,7 @@ public class TypeUserScreen extends AppCompatActivity {
         cvRestaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TypeUserScreen.this, LoginScreen.class));
+                startActivity(new Intent(TypeUserScreen.this, SignupScreen.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_RESTAURANT));
                 finish();
             }
         });

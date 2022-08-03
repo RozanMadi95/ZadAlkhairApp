@@ -61,28 +61,37 @@
                             android:textColorHint="@color/normal" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
+                    <LinearLayout
+                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_20sdp"
-                        android:layout_marginEnd="@dimen/_20sdp"
-                        app:boxStrokeColor="@color/dark"
-                        app:hintTextColor="@color/dark">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/sign_upEtPhone"
+                        android:layout_marginEnd="@dimen/_20sdp">
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/code_picker"
+                            android:layout_width="@dimen/_100sdp"
+                            app:ccp_showNameCode="false"
+                            app:ccp_defaultNameCode="ps"
+                            android:layout_height="wrap_content">
+                        </com.hbb20.CountryCodePicker>
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="@color/hint3"
-                            android:drawableStart="@drawable/ic_phone"
-                            android:drawablePadding="@dimen/_10sdp"
-                            android:hint="@string/phone"
-                            android:inputType="number"
-                            android:maxLength="10"
-                            android:textColor="@color/black"
-                            android:textColorHint="#546E7A" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                            app:boxStrokeColor="@color/dark"
+                            app:hintTextColor="@color/dark">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/sign_upEtPhone"
+                                android:text="598099709"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:backgroundTint="@color/hint3"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

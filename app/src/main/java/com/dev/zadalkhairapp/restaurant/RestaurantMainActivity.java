@@ -1,4 +1,4 @@
-package com.dev.zadalkhairapp.consumer;
+package com.dev.zadalkhairapp.restaurant;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -6,22 +6,26 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 
 import com.dev.zadalkhairapp.R;
+import com.dev.zadalkhairapp.consumer.CartFragment;
+import com.dev.zadalkhairapp.consumer.FavoriteFragment;
+import com.dev.zadalkhairapp.consumer.HomeFragment;
+import com.dev.zadalkhairapp.consumer.ProfileFragment;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import nl.joery.animatedbottombar.AnimatedBottomBar;
 
-public class MainActivity extends AppCompatActivity {
+public class RestaurantMainActivity extends AppCompatActivity {
     AnimatedBottomBar bottomBar;
     HomeFragment homeFragment = null;
     FavoriteFragment favoriteFragment = null;
     CartFragment cartFragment = null;
     ProfileFragment profileFragment = null;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_restaurant_main);
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
