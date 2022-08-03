@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/restaurantHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+
+    <item
+        android:id="@+id/restaurantMeals"
+        android:icon="@drawable/ic_meals"
+        android:title="@string/Meals" />
+
+
+    <item
+        android:id="@+id/restaurantAddMeals"
+        android:icon="@drawable/ic_add_meals"
+        android:title="@string/restaurantAddMeals" />
+
+    <item
+        android:id="@+id/restaurantAssociation"
+        android:icon="@drawable/ic_associations"
+        android:title="@string/association" />
+    <item
+        android:id="@+id/restaurantProfile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>

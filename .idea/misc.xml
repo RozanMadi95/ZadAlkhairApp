@@ -13,24 +13,34 @@
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/dialog_add_cart_button_background.xml" value="0.2795" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/favorite_item_background.xml" value="0.2255" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/favoriteitem.xml" value="0.2795" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_add_meals.xml" value="0.227" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_associations.xml" value="0.227" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_cart.xml" value="0.2255" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_cart_menu.xml" value="0.2255" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_delete.xml" value="0.2205" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_email.xml" value="0.2795" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_favorite_meals.xml" value="0.2255" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_home.xml" value="0.227" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_location.xml" value="0.2795" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_meals.xml" value="0.227" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_name.xml" value="0.2795" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_password.xml" value="0.112" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_phone.xml" value="0.112" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_profile.xml" value="0.227" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/ic_restaurant.xml" value="0.227" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/drawable/itemrv.xml" value="0.195" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_association_login.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_association_main.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_association_signup.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_forgot_password_screen.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_login_screen.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_main.xml" value="0.128125" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_main2.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_meal_details.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.1265625" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_restaurant_login.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_restaurant_main.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_restaurant_signup.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_signup_screen.xml" value="0.2609375" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_splash_screen.xml" value="0.1140625" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/activity_type_user_screen.xml" value="0.1265625" />
@@ -43,6 +53,9 @@
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_favorite.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_profile.xml" value="0.2609375" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_restaurant_add_meals.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_restaurant_home.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/fragment_restaurant_profile.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_favorite_meals.xml" value="0.264" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_meals.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/item_meals_cart.xml" value="0.24444444444444444" />
@@ -51,6 +64,8 @@
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/layout/slides_layout.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/menu/consumer_bottom_navigation.xml" value="0.275" />
         <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/menu/menu_meals_details_toolbar.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/menu/tabs_consumer_bottom_navigation.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Almajd-PC/AndroidStudioProjects/ZadAlkhairApp2/app/src/main/res/menu/tabs_restaurant_bottom_navigation.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_expandable_list_item_1.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Almajd-PC/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.24444444444444444" />
       </map>

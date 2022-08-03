@@ -17,10 +17,11 @@ import nl.joery.animatedbottombar.AnimatedBottomBar;
 
 public class RestaurantMainActivity extends AppCompatActivity {
     AnimatedBottomBar bottomBar;
-    HomeFragment homeFragment = null;
-    FavoriteFragment favoriteFragment = null;
-    CartFragment cartFragment = null;
-    ProfileFragment profileFragment = null;
+    RestaurantHomeFragment  restaurantHomeFragment= null;
+    RestaurantMealsFragment restaurantMealsFragment = null;
+    RestaurantAddMealsFragment restaurantAddMealsFragment = null;
+    RestaurantAssociationsFragment restaurantAssociationsFragment = null;
+    RestaurantProfileFragment restaurantProfileFragment = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,31 +31,34 @@ public class RestaurantMainActivity extends AppCompatActivity {
             getSupportActionBar().hide();
         }
 
-        bottomBar = findViewById(R.id.consumer_bottom_navigation);
+        bottomBar = findViewById(R.id.restaurant_bottom_navigation);
 
-        homeFragment = HomeFragment.newInstance("","");
-        favoriteFragment = FavoriteFragment.newInstance("","");
-        cartFragment = CartFragment.newInstance("","");
-        profileFragment = ProfileFragment.newInstance("","");
+        restaurantHomeFragment = RestaurantHomeFragment.newInstance("","");
+        restaurantMealsFragment = RestaurantMealsFragment.newInstance("","");
+        restaurantAddMealsFragment = RestaurantAddMealsFragment.newInstance("","");
+        restaurantAssociationsFragment = RestaurantAssociationsFragment.newInstance("","");
+        restaurantProfileFragment = RestaurantProfileFragment.newInstance("","");
 
 
 
-        bottomBar.selectTabById(R.id.consumerHome,true);
-        setFragmentToContainer(homeFragment);
+        bottomBar.selectTabById(R.id.restaurantHome,true);
+        setFragmentToContainer(restaurantHomeFragment);
         bottomBar.setOnTabSelected(new Function1<AnimatedBottomBar.Tab, Unit>() {
             @Override
             public Unit invoke(AnimatedBottomBar.Tab tab) {
-                if (tab.getId() == R.id.consumerHome){
-                    setFragmentToContainer(homeFragment);
-                }else if (tab.getId() == R.id.consumerFavorite){
-                    setFragmentToContainer(favoriteFragment);
+                if (tab.getId() == R.id.restaurantHome){
+                    setFragmentToContainer(restaurantHomeFragment);
+                }else if (tab.getId() == R.id.restaurantMeals){
+                    setFragmentToContainer(restaurantMealsFragment);
 
-                }else if (tab.getId() == R.id.consumerCart){
-                    setFragmentToContainer(cartFragment);
+                }else if (tab.getId() == R.id.restaurantAddMeals){
+                    setFragmentToContainer(restaurantAddMealsFragment);
 
-                }else if (tab.getId() == R.id.consumerProfile){
-                    setFragmentToContainer(profileFragment);
-                }
+                }else if (tab.getId() == R.id.restaurantAssociation){
+                    setFragmentToContainer(restaurantAssociationsFragment);
+                }else if (tab.getId() == R.id.restaurantProfile){
+                setFragmentToContainer(restaurantProfileFragment);
+            }
                 return null;
             }
         });
@@ -62,7 +66,7 @@ public class RestaurantMainActivity extends AppCompatActivity {
 
     private void setFragmentToContainer(Fragment fragment){
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.containerView, fragment)
+                .replace(R.id.restaurant_containerView, fragment)
                 .commit();
     }
 

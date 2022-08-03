@@ -23,7 +23,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_150sdp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/icon_logo"
                 android:scaleType="center"
@@ -32,23 +32,20 @@
             <LinearLayout
                 android:id="@+id/linearlayout"
                 android:layout_width="@dimen/_270sdp"
-                android:layout_height="@dimen/_400sdp"
+                android:layout_height="@dimen/_300sdp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_210sdp"
+                android:layout_marginTop="@dimen/_170sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_21sdp"
                 android:background="@drawable/background_shape"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="@dimen/_16sdp">
-
+                android:padding="@dimen/_15sdp">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:paddingBottom="@dimen/_10sdp"
                     app:boxStrokeColor="@color/dark"
                     app:hintTextColor="@color/dark">
 
@@ -101,7 +98,7 @@
                     android:id="@+id/loginButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:background="@drawable/background_shape_button"
                     android:text="@string/login"
                     android:textColor="@color/white"
@@ -111,7 +108,7 @@
                     android:id="@+id/loginTVSingUp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/do_not_have_an_account_signup"
                     android:textAlignment="center"
                     android:textColor="@color/dark"

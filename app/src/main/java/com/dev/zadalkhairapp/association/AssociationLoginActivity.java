@@ -1,7 +1,9 @@
-package com.dev.zadalkhairapp.activity;
+package com.dev.zadalkhairapp.association;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -12,15 +14,12 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatImageButton;
-import androidx.appcompat.widget.AppCompatTextView;
-
 import com.dev.zadalkhairapp.R;
 import com.dev.zadalkhairapp.ReusableCodeForAll;
-import com.dev.zadalkhairapp.association.AssociationMainActivity;
+import com.dev.zadalkhairapp.activity.ForgotPasswordScreen;
+import com.dev.zadalkhairapp.activity.LoginScreen;
+import com.dev.zadalkhairapp.activity.SignupScreen;
 import com.dev.zadalkhairapp.consumer.MainActivity;
-import com.dev.zadalkhairapp.restaurant.RestaurantMainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -29,81 +28,77 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.Objects;
-
-
-public class LoginScreen extends AppCompatActivity {
-    TextInputEditText etEmail, etPassword;
-    AppCompatTextView  tvForgotPassword, tvSingUp;
-    AppCompatButton btnLogin;
+public class AssociationLoginActivity extends AppCompatActivity {
+    TextInputEditText association_etEmail, association_etPassword;
+    AppCompatTextView association_tvForgotPassword, association_tvSingUp;
+    AppCompatButton association_btnLogin;
     String email , password;
     DatabaseReference databaseReference;
     FirebaseDatabase firebaseDatabase;
     FirebaseAuth firebaseAuth;
     boolean isValidateData;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_screen);
+        setContentView(R.layout.activity_association_login);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
         findViewById();
 
-        databaseReference = firebaseDatabase.getInstance().getReference("Consumer");
+        databaseReference = firebaseDatabase.getInstance().getReference(AssociationSignupActivity.PATH_ASSOCIATION);
         firebaseAuth = FirebaseAuth.getInstance();
 
-        btnLogin.setOnClickListener(v-> LoginAccount());
+        association_btnLogin.setOnClickListener(v-> associationLoginAccount());
 
 
-        tvSingUp.setOnClickListener(new View.OnClickListener() {
+        association_tvSingUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginScreen.this,SignupScreen.class));
+                startActivity(new Intent(AssociationLoginActivity.this, AssociationSignupActivity.class));
                 finish();
             }
         });
 
-        tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+        association_etPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginScreen.this,ForgotPasswordScreen.class));
+                startActivity(new Intent(AssociationLoginActivity.this, ForgotPasswordScreen.class));
                 finish();
             }
         });
     }
     public void findViewById() {
-        etEmail = findViewById(R.id.loginEtEmail);
-        etPassword = findViewById(R.id.loginEtPassword);
-        tvForgotPassword = findViewById(R.id.loginTVForgotPassword);
-        tvSingUp = findViewById(R.id.loginTVSingUp);
-        btnLogin = findViewById(R.id.loginButton);
+        association_etEmail = findViewById(R.id.association_loginEtEmail);
+        association_etPassword = findViewById(R.id.association_loginEtPassword);
+        association_tvForgotPassword = findViewById(R.id.association_loginTVForgotPassword);
+        association_tvSingUp = findViewById(R.id.association_loginTVSingUp);
+        association_btnLogin = findViewById(R.id.association_loginButton);
     }
 
     boolean validateData(String email ,String password){
         boolean isValid=false, isValid_email=false, isValid_password=false;
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches() || TextUtils.isEmpty(email)) {
-            ReusableCodeForAll.giveMassageError(etEmail,getResources().getString(R.string.Enter_valid_email));
+            ReusableCodeForAll.giveMassageError(association_etEmail,getResources().getString(R.string.Enter_valid_email));
         }else {
             isValid_email= true;
         }
         if (TextUtils.isEmpty(password)|| password.length()< 7) {
-            ReusableCodeForAll.giveMassageError(etPassword,getResources().getString(R.string.Enter_valid_password));
+            ReusableCodeForAll.giveMassageError(association_etPassword,getResources().getString(R.string.Enter_valid_password));
         }else {
             isValid_password = true;
         }
         isValid = ( isValid_email && isValid_password ) ? true : false;
         return isValid;
     }
-    void LoginAccount(){
-        email = etEmail.getText().toString();
-        password = etPassword.getText().toString();
+    void associationLoginAccount(){
+        email = association_etEmail.getText().toString();
+        password = association_etPassword.getText().toString();
         isValidateData = validateData(email,password);
 
         if (isValidateData) {
-            final ProgressDialog progressDialog = new ProgressDialog(LoginScreen.this);
+            final ProgressDialog progressDialog = new ProgressDialog(AssociationLoginActivity.this);
             progressDialog.setCancelable(false);
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.setTitle(R.string.login_here);
@@ -116,24 +111,22 @@ public class LoginScreen extends AppCompatActivity {
                         if (firebaseAuth.getCurrentUser().isEmailVerified()) {
                             progressDialog.dismiss();
                             try {
-                                Toast.makeText(LoginScreen.this, getResources().getString(R.string.Login_successes), Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(LoginScreen.this, MainActivity.class));
+                                Toast.makeText(AssociationLoginActivity.this, getResources().getString(R.string.Login_successes), Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(AssociationLoginActivity.this, AssociationMainActivity.class));
                                 finish();
                             } catch (Exception ee) {
-                                Toast.makeText(LoginScreen.this,ee.getMessage() +"try catch err ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(AssociationLoginActivity.this,ee.getMessage() +"try catch err ", Toast.LENGTH_SHORT).show();
                             }
                         } else {
-                            Toast.makeText(LoginScreen.this, getResources().getString(R.string.error_login)+ task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AssociationLoginActivity.this, getResources().getString(R.string.error_login) + task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     } else {
                         progressDialog.dismiss();
-
-                        Toast.makeText(LoginScreen.this, getResources().getString(R.string.error_login) + task.getException(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AssociationLoginActivity.this, getResources().getString(R.string.error_login) + task.getException(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
 
         }
-
     }
 }

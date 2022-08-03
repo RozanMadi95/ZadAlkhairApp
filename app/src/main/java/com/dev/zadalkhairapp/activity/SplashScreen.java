@@ -12,8 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dev.zadalkhairapp.R;
-import com.dev.zadalkhairapp.consumer.MainActivity;
-import com.dev.zadalkhairapp.consumer.MealDetailsActivity;
+import com.dev.zadalkhairapp.restaurant.RestaurantMainActivity;
 
 public class SplashScreen extends AppCompatActivity {
     //تعريف المتغيرات
@@ -79,7 +78,7 @@ public class SplashScreen extends AppCompatActivity {
 //                    startActivity(new Intent(SplashScreen.this,
 //                            TypeUserScreen.class));
                     startActivity(new Intent(SplashScreen.this,
-                            SignupScreen.class));
+                            RestaurantMainActivity.class));
                 }
                 finish();
             },SPLASH_DURATION);

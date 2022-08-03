@@ -1,4 +1,4 @@
-package com.dev.zadalkhairapp.activity;
+package com.dev.zadalkhairapp.association;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,13 +13,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.dev.zadalkhairapp.R;
 import com.dev.zadalkhairapp.ReusableCodeForAll;
-
 import com.dev.zadalkhairapp.RoleClass;
+import com.dev.zadalkhairapp.activity.LoginScreen;
+import com.dev.zadalkhairapp.activity.SignupScreen;
 import com.dev.zadalkhairapp.consumer.Consumer;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -30,12 +30,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hbb20.CountryCodePicker;
 
-import java.util.HashMap;
 import java.util.Objects;
 
-
-public class SignupScreen extends AppCompatActivity {
-    public static final String PATH_CONSUMER ="Consumer";
+public class AssociationSignupActivity extends AppCompatActivity {
+    public static final String PATH_ASSOCIATION ="Association";
     TextInputEditText etPhone, etName, etEmail, etAddress, etPassword;
     AppCompatTextView tvSingIn;
     AppCompatButton btnSignUp;
@@ -43,7 +41,7 @@ public class SignupScreen extends AppCompatActivity {
     CountryCodePicker codePicker;
     Intent intent;
     String type;
-    String role = "consumer";
+    String role = "association";
     String name ,email,address,password,phone,intro_number,phoneAll;
     DatabaseReference databaseReference;
     FirebaseDatabase firebaseDatabase;
@@ -54,50 +52,50 @@ public class SignupScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup_screen);
+        setContentView(R.layout.activity_association_signup);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
 
         findViewById();
 
-        databaseReference = firebaseDatabase.getInstance().getReference(PATH_CONSUMER);
+        databaseReference = firebaseDatabase.getInstance().getReference(PATH_ASSOCIATION);
         firebaseAuth = FirebaseAuth.getInstance();
 
         btnSignUp.setOnClickListener(v-> signUpAccount());
         tvSingIn.setOnClickListener(view -> {
-            startActivity(new Intent(SignupScreen.this,LoginScreen.class));
+            startActivity(new Intent(AssociationSignupActivity.this, AssociationLoginActivity.class));
             finish();
         });
     }
 
     public void findViewById() {
-        etName = findViewById(R.id.sign_upEtName);
-        etPhone = findViewById(R.id.sign_upEtPhone);
-        etEmail = findViewById(R.id.sign_upEtEmail);
-        etAddress = findViewById(R.id.sign_upEtAddress);
-        etPassword = findViewById(R.id.sign_upEtPassword);
-        checkBoxAgree = findViewById(R.id.sign_up_CheckBox);
-        btnSignUp = findViewById(R.id.sign_upButton);
-        tvSingIn = findViewById(R.id.sign_up_login);
-        codePicker = findViewById(R.id.code_picker);
+        etName = findViewById(R.id.association_sign_upEtName);
+        etPhone = findViewById(R.id.association_sign_upEtPhone);
+        etEmail = findViewById(R.id.association_sign_upEtEmail);
+        etAddress = findViewById(R.id.association_sign_upEtAddress);
+        etPassword = findViewById(R.id.association_sign_upEtPassword);
+        checkBoxAgree = findViewById(R.id.association_sign_up_CheckBox);
+        btnSignUp = findViewById(R.id.association_sign_upButton);
+        tvSingIn = findViewById(R.id.association_sign_up_login);
+        codePicker = findViewById(R.id.association_code_picker);
     }
 
     void signUpAccount(){
-          name = Objects.requireNonNull(etName.getText()).toString().trim();
-          email = Objects.requireNonNull(etEmail.getText()).toString().trim();
-          address = Objects.requireNonNull(etAddress.getText()).toString().trim();
-          password = Objects.requireNonNull(etPassword.getText()).toString().trim();
-         phone = Objects.requireNonNull(etPhone.getText()).toString().trim();
-         intro_number = codePicker.getSelectedCountryCodeWithPlus();
-         phoneAll = "" + intro_number + phone;
+        name = Objects.requireNonNull(etName.getText()).toString().trim();
+        email = Objects.requireNonNull(etEmail.getText()).toString().trim();
+        address = Objects.requireNonNull(etAddress.getText()).toString().trim();
+        password = Objects.requireNonNull(etPassword.getText()).toString().trim();
+        phone = Objects.requireNonNull(etPhone.getText()).toString().trim();
+        intro_number = codePicker.getSelectedCountryCodeWithPlus();
+        phoneAll = "" + intro_number + phone;
 
 
 
         isValidateData = validateData(name,phoneAll,email ,address ,password);
 
         if (isValidateData) {
-            final ProgressDialog progressDialog = new ProgressDialog(SignupScreen.this);
+            final ProgressDialog progressDialog = new ProgressDialog(AssociationSignupActivity.this);
             progressDialog.setCancelable(false);
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.setTitle(R.string.register);
@@ -114,10 +112,10 @@ public class SignupScreen extends AppCompatActivity {
                         databaseReference.setValue(roleClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                Consumer consumerObj = new Consumer(name, email, address, password, phoneAll);
+                                Association associationObj = new Association(name, email, address, password, phoneAll);
 
-                                firebaseDatabase.getInstance().getReference(PATH_CONSUMER).child(FirebaseAuth.getInstance()
-                                        .getCurrentUser().getUid()).setValue(consumerObj).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                firebaseDatabase.getInstance().getReference(PATH_ASSOCIATION).child(FirebaseAuth.getInstance()
+                                        .getCurrentUser().getUid()).setValue(associationObj).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         progressDialog.dismiss();
@@ -125,15 +123,15 @@ public class SignupScreen extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 if (task.isSuccessful()) {
-                                                    AlertDialog.Builder builder = new AlertDialog.Builder(SignupScreen.this);
+                                                    AlertDialog.Builder builder = new AlertDialog.Builder(AssociationSignupActivity.this);
                                                     builder.setMessage(getResources().getString(R.string.checkEmail));
                                                     builder.setTitle(R.string.VerificationMsg);
                                                     builder.setCancelable(false);
                                                     builder.setPositiveButton(R.string.positiv_btn, new DialogInterface.OnClickListener() {
                                                         @Override
                                                         public void onClick(DialogInterface dialog, int which) {
-                                                            startActivity(new Intent(SignupScreen.this, LoginScreen.class));
-                                                                    Toast.makeText(SignupScreen.this, getResources().getString(R.string.consumer), Toast.LENGTH_SHORT).show();
+                                                            startActivity(new Intent(AssociationSignupActivity.this, LoginScreen.class));
+                                                            Toast.makeText(AssociationSignupActivity.this, getResources().getString(R.string.association), Toast.LENGTH_SHORT).show();
                                                             dialog.dismiss();
                                                         }
                                                     });
@@ -142,7 +140,7 @@ public class SignupScreen extends AppCompatActivity {
 
                                                 } else {
                                                     progressDialog.dismiss();
-                                                    Toast.makeText(SignupScreen.this, getResources().getString(R.string.errorSignUp)+ task.getException(), Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(AssociationSignupActivity.this, getResources().getString(R.string.errorSignUp) + task.getException(), Toast.LENGTH_SHORT).show();
 
                                                 }
                                             }
@@ -158,25 +156,6 @@ public class SignupScreen extends AppCompatActivity {
             Toast.makeText(this, R.string.errorSignUp, Toast.LENGTH_SHORT).show();
 
         }
-
-//        intent = getIntent();
-//        type = intent.getStringExtra(TypeUserScreen.Name_INTENT_TYPE_USER).trim();
-//
-//        switch (type) {
-//            case TypeUserScreen.VALUE_INTENT_TYPE_USER_ASSOCIATION:
-//                startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_ASSOCIATION));
-//                Toast.makeText(this, getResources().getString(R.string.association), Toast.LENGTH_SHORT).show();
-//                break;
-//            case TypeUserScreen.VALUE_INTENT_TYPE_USER_CONSUMER:
-//                startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_CONSUMER));
-//                Toast.makeText(this, getResources().getString(R.string.consumer), Toast.LENGTH_SHORT).show();
-//                break;
-//            case TypeUserScreen.VALUE_INTENT_TYPE_USER_RESTAURANT:
-//                startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_RESTAURANT));
-//                Toast.makeText(this, getResources().getString(R.string.restaurant), Toast.LENGTH_SHORT).show();
-//                break;
-//        }
-//        finish();
 
     }
 

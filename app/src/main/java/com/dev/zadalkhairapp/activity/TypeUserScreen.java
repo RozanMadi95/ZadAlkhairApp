@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.dev.zadalkhairapp.R;
+import com.dev.zadalkhairapp.association.AssociationSignupActivity;
+import com.dev.zadalkhairapp.restaurant.RestaurantSignupActivity;
 
 public class TypeUserScreen extends AppCompatActivity {
     public static final String Name_INTENT_TYPE_USER = "TypeUser";
@@ -25,7 +27,7 @@ public class TypeUserScreen extends AppCompatActivity {
         cvAssociation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TypeUserScreen.this, SignupScreen.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_ASSOCIATION));
+                startActivity(new Intent(TypeUserScreen.this, AssociationSignupActivity.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_ASSOCIATION));
                 finish();
             }
         });
@@ -41,7 +43,7 @@ public class TypeUserScreen extends AppCompatActivity {
         cvRestaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TypeUserScreen.this, SignupScreen.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_RESTAURANT));
+                startActivity(new Intent(TypeUserScreen.this, RestaurantSignupActivity.class).putExtra(Name_INTENT_TYPE_USER,VALUE_INTENT_TYPE_USER_RESTAURANT));
                 finish();
             }
         });

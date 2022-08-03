@@ -70,6 +70,16 @@
     <string name="Enter_valid_email">Enter a valid email</string>
     <string name="Enter_your_address_Enter_valid">Enter your valid address</string>
     <string name="Enter_valid_password">Enter a valid password of at least 7</string>
+    <string name="logInWithEmail">Login with email ...</string>
+    <string name="Login_successes">Login successes</string>
+    <string name="error_login">error in login</string>
+    <string name="checkEmail">pleaes  check email</string>
+    <string name="VerificationMsg">Verification Msg</string>
+    <string name="errorSignUp">error in signup</string>
+    <string name="register">Register</string>
+    <string name="presses_register">presses register...</string>
+    <string name="restaurantAddMeals">Add Meals</string>
+    <string name="Meals">Meals</string>
 
 
 </resources>

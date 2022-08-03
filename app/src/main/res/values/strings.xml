@@ -24,7 +24,7 @@
     <string name="favorite">المفضلة</string>
     <string name="cart">الطلبات</string>
     <string name="profile">الملف الشخصي</string>
-    <string name="home">الصفحة الرئيسية</string>
+    <string name="home">" الرئيسية"</string>
     <string name="userName"> اسم المستخدم</string>
     <string name="Restaurants">المطعام</string>
     <string name="meals">"الوجبات المتاحة "</string>
@@ -71,5 +71,17 @@
     <string name="Enter_valid_email">ادخل بريد صحيح</string>
     <string name="Enter_your_address_Enter_valid">ادخل عنوانك الصحيح</string>
     <string name="Enter_valid_password">ادخل كلمة مرور صحيحة لا تقل عن 7</string>
+    <string name="logInWithEmail">تسجيل الدخول بإستخدام الإيميل...</string>
+    <string name="Login_successes">تم عملية تسجيل</string>
+    <string name="error_login">خطأ في عملية تسجيل الدخول</string>
+    <string name="checkEmail">من فضلك تفقد الايميل ..</string>
+    <string name="VerificationMsg">رسالة تفعيل الايميل</string>
+    <string name="errorSignUp">خطأ في عملية التسجيل</string>
+    <string name="register">تسجيل</string>
+    <string name="presses_register">عملية التسجيل...</string>
+    <string name="restaurantAddMeals">إضافة وجبة</string>
+    <string name="Meals">الوجبات</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -36,7 +36,7 @@
             app:abb_tabColorSelected="@color/appBar"
             app:abb_indicatorColor="@color/appBar"
             app:abb_indicatorLocation="top"
-            app:abb_tabs="@menu/tabs_consumer_bottom_navigation"
+            app:abb_tabs="@menu/tabs_restaurant_bottom_navigation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

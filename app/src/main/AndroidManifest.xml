@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZadAlkhairApp">
         <activity
+            android:name=".restaurant.RestaurantLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant.RestaurantSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".association.AssociationSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".association.AssociationLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".association.AssociationMainActivity"
             android:exported="false" />
         <activity
@@ -24,8 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".activity.ForgotPasswordScreen"
-            android:exported="false"
-            android:theme="@style/NoTitle" />
+            android:exported="false" />
         <activity
             android:name=".activity.SignupScreen"
             android:exported="false" /> <!-- android:theme="@style/Theme.AppNoActionBar" -->
