@@ -78,7 +78,7 @@ public class SplashScreen extends AppCompatActivity {
 //                    startActivity(new Intent(SplashScreen.this,
 //                            TypeUserScreen.class));
                     startActivity(new Intent(SplashScreen.this,
-                            TypeUserScreen.class));
+                            RestaurantMainActivity.class));
                 }
                 finish();
             },SPLASH_DURATION);

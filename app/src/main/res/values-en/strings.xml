@@ -81,6 +81,8 @@
     <string name="restaurantAddMeals">Add Meals</string>
     <string name="Meals">Meals</string>
     <string name="OrderMeals">Order Meals</string>
+    <string name="number_of">Number of</string>
+    <string name="number">10</string>
 
 
 </resources>

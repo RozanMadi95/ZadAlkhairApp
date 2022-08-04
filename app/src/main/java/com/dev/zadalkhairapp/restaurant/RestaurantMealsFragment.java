@@ -2,6 +2,7 @@ package com.dev.zadalkhairapp.restaurant;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -60,7 +61,10 @@ public class RestaurantMealsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view=  inflater.inflate(R.layout.fragment_restaurant_meals, container, false);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_restaurant_meals, container, false);
+        getActivity().setTitle(R.string.meals); //  اضافة عنوان للشاشة
+
+        return view;
     }
 }

@@ -80,6 +80,8 @@
     <string name="restaurantAddMeals">إضافة وجبة</string>
     <string name="Meals">الوجبات</string>
     <string name="OrderMeals">طلبات الوجبات</string>
+    <string name="number_of">عدد الطلبات</string>
+    <string name="number">10</string>
 
 
 </resources>
