@@ -110,7 +110,7 @@ public class RestaurantSignupActivity extends AppCompatActivity {
                         databaseReference.setValue(roleClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
-                                Restaurant restaurantObj = new Restaurant(name, email, address, password, phoneAll);
+                                Restaurant restaurantObj = new Restaurant(name, email, address, password, phoneAll,"","");
 
                                 firebaseDatabase.getInstance().getReference(PATH_RESTAURANT).child(FirebaseAuth.getInstance()
                                         .getCurrentUser().getUid()).setValue(restaurantObj).addOnCompleteListener(new OnCompleteListener<Void>() {

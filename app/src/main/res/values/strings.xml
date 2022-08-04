@@ -83,5 +83,6 @@
     <string name="Meals">الوجبات</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="OrderMeals">طلبات الوجبات</string>
 
 </resources>

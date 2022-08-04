@@ -79,6 +79,7 @@
     <string name="presses_register">عملية التسجيل...</string>
     <string name="restaurantAddMeals">إضافة وجبة</string>
     <string name="Meals">الوجبات</string>
+    <string name="OrderMeals">طلبات الوجبات</string>
 
 
 </resources>

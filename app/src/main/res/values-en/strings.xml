@@ -80,6 +80,7 @@
     <string name="presses_register">presses register...</string>
     <string name="restaurantAddMeals">Add Meals</string>
     <string name="Meals">Meals</string>
+    <string name="OrderMeals">Order Meals</string>
 
 
 </resources>
