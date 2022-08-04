@@ -68,10 +68,11 @@ public class LoginScreen extends AppCompatActivity {
         tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginScreen.this,ForgotPasswordScreen.class));
+                startActivity(new Intent(LoginScreen.this,ForgotPasswordScreen.class).putExtra( TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_CONSUMER));
                 finish();
             }
         });
+
     }
     public void findViewById() {
         etEmail = findViewById(R.id.loginEtEmail);

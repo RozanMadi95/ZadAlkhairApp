@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.dev.zadalkhairapp.R;
 import com.dev.zadalkhairapp.ReusableCodeForAll;
 import com.dev.zadalkhairapp.activity.ForgotPasswordScreen;
+import com.dev.zadalkhairapp.activity.TypeUserScreen;
 import com.dev.zadalkhairapp.association.AssociationLoginActivity;
 import com.dev.zadalkhairapp.association.AssociationMainActivity;
 import com.dev.zadalkhairapp.association.AssociationSignupActivity;
@@ -59,10 +60,10 @@ public class RestaurantLoginActivity extends AppCompatActivity {
             }
         });
 
-        restaurant_etPassword.setOnClickListener(new View.OnClickListener() {
+        restaurant_tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RestaurantLoginActivity.this, ForgotPasswordScreen.class));
+                startActivity(new Intent(RestaurantLoginActivity.this, ForgotPasswordScreen.class).putExtra( TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_RESTAURANT));
                 finish();
             }
         });

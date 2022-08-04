@@ -159,23 +159,7 @@ public class SignupScreen extends AppCompatActivity {
 
         }
 
-//        intent = getIntent();
-//        type = intent.getStringExtra(TypeUserScreen.Name_INTENT_TYPE_USER).trim();
-//
-//        switch (type) {
-//            case TypeUserScreen.VALUE_INTENT_TYPE_USER_ASSOCIATION:
-//                startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_ASSOCIATION));
-//                Toast.makeText(this, getResources().getString(R.string.association), Toast.LENGTH_SHORT).show();
-//                break;
-//            case TypeUserScreen.VALUE_INTENT_TYPE_USER_CONSUMER:
-//                startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_CONSUMER));
-//                Toast.makeText(this, getResources().getString(R.string.consumer), Toast.LENGTH_SHORT).show();
-//                break;
-//            case TypeUserScreen.VALUE_INTENT_TYPE_USER_RESTAURANT:
-//                startActivity(new Intent(SignupScreen.this, LoginScreen.class).putExtra(TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_RESTAURANT));
-//                Toast.makeText(this, getResources().getString(R.string.restaurant), Toast.LENGTH_SHORT).show();
-//                break;
-//        }
+
 //        finish();
 
     }

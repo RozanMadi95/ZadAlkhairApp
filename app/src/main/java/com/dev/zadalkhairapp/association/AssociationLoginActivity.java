@@ -19,6 +19,7 @@ import com.dev.zadalkhairapp.ReusableCodeForAll;
 import com.dev.zadalkhairapp.activity.ForgotPasswordScreen;
 import com.dev.zadalkhairapp.activity.LoginScreen;
 import com.dev.zadalkhairapp.activity.SignupScreen;
+import com.dev.zadalkhairapp.activity.TypeUserScreen;
 import com.dev.zadalkhairapp.consumer.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -60,10 +61,10 @@ public class AssociationLoginActivity extends AppCompatActivity {
             }
         });
 
-        association_etPassword.setOnClickListener(new View.OnClickListener() {
+        association_tvForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AssociationLoginActivity.this, ForgotPasswordScreen.class));
+                startActivity(new Intent(AssociationLoginActivity.this, ForgotPasswordScreen.class).putExtra( TypeUserScreen.Name_INTENT_TYPE_USER, TypeUserScreen.VALUE_INTENT_TYPE_USER_ASSOCIATION));
                 finish();
             }
         });

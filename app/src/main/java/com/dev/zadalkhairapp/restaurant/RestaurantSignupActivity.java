@@ -129,7 +129,7 @@ public class RestaurantSignupActivity extends AppCompatActivity {
                                                         @Override
                                                         public void onClick(DialogInterface dialog, int which) {
                                                             startActivity(new Intent(RestaurantSignupActivity.this, RestaurantLoginActivity.class));
-                                                            Toast.makeText(RestaurantSignupActivity.this, getResources().getString(R.string.consumer), Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(RestaurantSignupActivity.this, getResources().getString(R.string.restaurant), Toast.LENGTH_SHORT).show();
                                                             dialog.dismiss();
                                                         }
                                                     });
