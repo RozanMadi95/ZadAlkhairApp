@@ -82,6 +82,9 @@
     <string name="OrderMeals">طلبات الوجبات</string>
     <string name="number_of">عدد الطلبات</string>
     <string name="number">10</string>
+    <string name="free">مجانا</string>
+    <string name="restaurantAddMeal">إضافة وجبة</string>
+    <string name="_price">السعر</string>
 
 
 </resources>

@@ -83,6 +83,9 @@
     <string name="OrderMeals">Order Meals</string>
     <string name="number_of">Number of</string>
     <string name="number">10</string>
+    <string name="free">free</string>
+    <string name="restaurantAddMeal">Add Meal</string>
+    <string name="_price">price</string>
 
 
 </resources>
