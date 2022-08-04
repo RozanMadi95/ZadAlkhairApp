@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_Fragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/associations_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/association"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_associations"
+           android:drawablePadding="@dimen/_10sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/dark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/associations_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:text="@string/address"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_location_associations"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/normal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/associations_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/phone"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/normal" />
+    </LinearLayout>
+    </LinearLayout>
