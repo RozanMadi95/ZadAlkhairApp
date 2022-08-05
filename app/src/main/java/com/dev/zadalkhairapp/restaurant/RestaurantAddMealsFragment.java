@@ -36,10 +36,10 @@ import com.google.firebase.storage.UploadTask;
 import java.util.UUID;
 
 public class RestaurantAddMealsFragment extends Fragment implements View.OnClickListener{
-
     FloatingActionButton addbtnImage;
     ImageView showimage;
     RadioGroup radgroup ;
+    String iidd;
 //    addMeals_et_Name
     //addMeals_available_items
     AppCompatEditText mealsname ;
