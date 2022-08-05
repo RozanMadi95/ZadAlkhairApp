@@ -39,7 +39,7 @@ public class RestaurantAddMealsFragment extends Fragment implements View.OnClick
     FloatingActionButton addbtnImage;
     ImageView showimage;
     RadioGroup radgroup ;
-    String iidd;
+
 //    addMeals_et_Name
     //addMeals_available_items
     AppCompatEditText mealsname ;
