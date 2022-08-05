@@ -109,7 +109,7 @@ public class RestaurantAddMealsFragment extends Fragment implements View.OnClick
         deliveroption=view.findViewById(R.id.addMeals_delivery_options);
         btnUploaddata =view.findViewById(R.id.addMeals_btnAdd);
         storage = FirebaseStorage.getInstance();
-        storageReference = storage.getReference();
+
         radgroup =view.findViewById(R.id.addMeals_radioGroup);
         FAuth = FirebaseAuth.getInstance();
         databaseReference = firebaseDatabase.getInstance().getReference("mealsdetial");
@@ -170,15 +170,16 @@ public class RestaurantAddMealsFragment extends Fragment implements View.OnClick
             final ProgressDialog progressDialog = new ProgressDialog(getContext());
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
-
+            storageReference = storage.getReference().child(RandomUId);
             RandomUId = UUID.randomUUID().toString();
-            storageReference.child(RandomUId).putFile(imageUri1).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            storageReference.putFile(imageUri1).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
 //        paymetoption
+
         namedesh=mealsname.getText().toString().trim();
         pricena =etpricemeals.getText().toString().trim();
         optiondeliver =deliveroption.getText().toString().trim();
