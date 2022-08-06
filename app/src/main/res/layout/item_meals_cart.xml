@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_shape_dialog_container"
-    android:layout_height="@dimen/_100sdp"
+    android:layout_height="@dimen/_70sdp"
     android:layout_gravity="center_horizontal"
     android:layout_marginBottom="@dimen/_10sdp">
 
     <ImageView
         android:id="@+id/cart_meals_img"
         android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_90sdp"
+        android:layout_height="@dimen/_60sdp"
         android:layout_marginStart="@dimen/_16sdp"
         android:scaleType="fitXY"
         android:src="@drawable/sanabil_meal1"
@@ -18,12 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/cart_meals_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/shorma"
         android:textColor="@color/black"
         android:textSize="@dimen/_16ssp"
@@ -34,40 +36,40 @@
         android:id="@+id/cart_meals_restaurant_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
         android:text="@string/sanabil"
-        android:textColor="@color/itemIconTint"
+        android:textColor="@color/appBar"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintStart_toEndOf="@+id/cart_meals_img"
-        app:layout_constraintTop_toBottomOf="@+id/cart_meals_name"
-        app:layout_constraintVertical_bias="0.22" />
-
+        app:layout_constraintTop_toBottomOf="@+id/cart_meals_name" />
 
     <TextView
         android:id="@+id/cart_meals_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginBottom="9dp"
         android:text="@string/sanabil5"
         android:textColor="@color/orange"
         android:textSize="@dimen/_15ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cart_meals_img"
-        app:layout_constraintTop_toBottomOf="@+id/cart_meals_restaurant_name"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/cart_meals_restaurant_name"
+        app:layout_constraintTop_toBottomOf="@+id/cart_meals_ImageButton_favorite" />
 
     <ImageButton
         android:id="@+id/cart_meals_ImageButton_favorite"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="16dp"
         android:background="@color/hint3"
         android:padding="@dimen/_10sdp"
         android:src="@drawable/ic_delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintHorizontal_bias="0.605"
         app:layout_constraintStart_toEndOf="@+id/cart_meals_restaurant_name"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -3,28 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:background="@drawable/itemrv"
-    android:layout_height="@dimen/_80sdp"
+    android:layout_height="@dimen/_70sdp"
     android:layout_gravity="center_horizontal"
     android:layout_marginBottom="@dimen/_10sdp">
 
     <ImageView
         android:id="@+id/order_meals_img"
         android:layout_width="@dimen/_70sdp"
-        android:layout_height="@dimen/_80sdp"
-        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:scaleType="fitXY"
-        android:src="@drawable/icon_logo"
+        android:src="@drawable/sanabil_meal2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/order_meals_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_24sdp"
-        android:text="@string/meals_name"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/sanabil_moqbrlat"
         android:textColor="@color/black"
         android:textSize="@dimen/_16ssp"
         app:layout_constraintStart_toEndOf="@+id/order_meals_img"
@@ -34,13 +37,13 @@
         android:id="@+id/order_meals_user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginStart="20dp"
         android:text="@string/userName"
         android:textColor="@color/itemIconTint"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/order_meals_img"
         app:layout_constraintTop_toBottomOf="@+id/order_meals_name"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="0.046" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

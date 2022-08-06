@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.dev.zadalkhairapp.R;
 import com.dev.zadalkhairapp.consumer.MainActivity;
 import com.dev.zadalkhairapp.consumer.ProfileFragment;
+import com.dev.zadalkhairapp.restaurant.RestaurantActivity;
 import com.dev.zadalkhairapp.restaurant.RestaurantEditMealsActivity;
 import com.dev.zadalkhairapp.restaurant.RestaurantEditProfileActivity;
 import com.dev.zadalkhairapp.restaurant.RestaurantMainActivity;
@@ -82,7 +83,7 @@ public class SplashScreen extends AppCompatActivity {
 //                    startActivity(new Intent(SplashScreen.this,
 //                            TypeUserScreen.class));
                     startActivity(new Intent(SplashScreen.this,
-                            RestaurantMainActivity.class));
+                            RestaurantActivity.class));
                 }
                 finish();
             },SPLASH_DURATION);
