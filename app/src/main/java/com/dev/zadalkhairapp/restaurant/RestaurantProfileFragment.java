@@ -1,7 +1,10 @@
 package com.dev.zadalkhairapp.restaurant;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
@@ -14,6 +17,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.dev.zadalkhairapp.R;
+import com.dev.zadalkhairapp.activity.AboutAppActivity;
+import com.dev.zadalkhairapp.activity.TermsnAndConditionsActivity;
+import com.dev.zadalkhairapp.consumer.EditProfileActivity;
 
 public class RestaurantProfileFragment extends Fragment {
 
@@ -23,8 +29,10 @@ public class RestaurantProfileFragment extends Fragment {
     ListView listViewAccount, listViewOthers;
     SearchView searchView;
     ArrayAdapter<String> adapterAccount, adapterOthers;
-    String[] itemsAccount = {"Edit Profile","Change Password","Change Language"};
-    String[] itemsOthers = {"Privacy Policy","Terms & Conditions","Logout"};
+    String[] itemsAccount = {"تعديل الملف الشخصي","تغير كلمة المرور"};
+    String[] itemsOthers = {"عن التطبيق","الشروط والقواعد","تسجيل خروج"};
+//    String[] itemsAccount = {"Edit Profile","Change Password"};
+//    String[] itemsOthers = {"Privacy Policy","Terms & Conditions","Logout"};
     private String mParam1;
     private String mParam2;
 
@@ -63,7 +71,15 @@ public class RestaurantProfileFragment extends Fragment {
         listViewAccount.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getContext(), i+""+ view.toString(), Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), i+""+ view.toString(), Toast.LENGTH_SHORT).show();
+                switch (i) {
+                    case 0:
+                        startActivity(new Intent(getActivity(), RestaurantEditProfileActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(getActivity(), ChangePasswordActivity.class));
+                        break;
+                }
             }
         });
         adapterOthers = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_expandable_list_item_1, itemsOthers);
@@ -71,9 +87,35 @@ public class RestaurantProfileFragment extends Fragment {
         listViewOthers.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getContext(), i+"", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), i+"", Toast.LENGTH_SHORT).show();
+                switch (i){
+                    case 0:
+                        startActivity(new Intent(getActivity(), AboutAppActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(getActivity(), TermsnAndConditionsActivity.class));
+                        break;
+                    case 2:
+                        new AlertDialog.Builder(getContext())
+                                .setMessage(getResources().getString(R.string.Logout))
+                                .setCancelable(false)
+                                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.dismiss();
+                                    }
+                                })
+                                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        getActivity().finish();
+                                    }
+                                })
+                                .show();
+                        break;
+
+                }
+
             }
-        });
-        return view;
+        });        return view;
     }
 }

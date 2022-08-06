@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/hint"
+    tools:context=".consumer.EditProfileActivity">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:contentDescription="@string/logo"
+                    android:src="@drawable/icon_logo"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_18sdp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        app:boxStrokeColor="@color/dark"
+                        android:background="@color/background_Fragment"
+                        app:hintTextColor="@color/dark">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/loginEtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/hint3"
+                            android:drawableStart="@drawable/ic_profileedit"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/name"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/normal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        app:boxStrokeColor="@color/dark"
+                        app:hintTextColor="@color/dark"
+                        android:background="@color/background_Fragment"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/loginEtPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/hint3"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/phone"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="#546E7A" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        app:boxStrokeColor="@color/dark"
+                        app:hintTextColor="@color/dark"
+                        android:background="@color/background_Fragment">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/loginEtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/hint3"
+                            android:drawableStart="@drawable/ic_location"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="@string/address_label"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/normal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/background_shape"
+                        android:text="@string/Update"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_19ssp" />
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

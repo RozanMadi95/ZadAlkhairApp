@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/hint"
+        tools:context=".restaurant.RestaurantEditProfileActivity">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/editProfile_restaurant_image_upload"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/camera_btn_shape"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_add_camera"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_400sdp"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_18sdp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editProfile_restaurant_EtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:drawableStart="@drawable/ic_profileedit"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/normal"
+                        android:textSize="@dimen/_15sdp"
+                        android:background="@color/background_Fragment"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editProfile_restaurant_EtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="@string/phone"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/normal"
+                        android:textSize="@dimen/_15sdp"
+                        android:background="@color/background_Fragment"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editProfile_restaurant_EtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:drawableStart="@drawable/ic_location"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="@string/address_label"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/normal"
+                        android:textSize="@dimen/_15sdp"
+                        android:background="@color/background_Fragment"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editProfile_restaurant_EtHourWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:drawableStart="@drawable/ic_hour_work"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:maxLines="8"
+                        android:hint="@string/Working_Hours"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/normal"
+                        android:textSize="@dimen/_15sdp"
+                        android:background="@color/background_Fragment"/>
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/background_shape"
+                        android:text="@string/Update"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_19ssp" />
+
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

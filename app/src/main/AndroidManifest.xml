@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZadAlkhairApp">
         <activity
+            android:name=".restaurant.RestaurantEditMealsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TermsnAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AboutAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant.RestaurantEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".consumer.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".restaurant.RestaurantActivity"
+            android:exported="false" />
+        <activity
             android:name=".restaurant.RestaurantLoginActivity"
             android:exported="false" />
         <activity

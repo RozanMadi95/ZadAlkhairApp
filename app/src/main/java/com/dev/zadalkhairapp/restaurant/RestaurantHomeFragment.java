@@ -28,11 +28,11 @@ public class RestaurantHomeFragment extends Fragment {
 //    FirebaseStorage storage;
 //    StorageReference storageReference;
 
-    String RandomUId,Mealname,avilibleitem,Price,resturentid,price,imgurl,paymentoption,deliveryoption,ecpiryDate;
+    String RandomUId, Mealname, avilibleitem, Price, resturentid, price, imgurl, paymentoption, deliveryoption, ecpiryDate;
 
-    private ArrayList<MealClass> mealarray =new ArrayList<>();
+    private ArrayList<MealClass> mealarray = new ArrayList<>();
     private ResturentAdapterMeals adapter;
-    FirebaseDatabase firebaseDatabase ;
+    FirebaseDatabase firebaseDatabase;
 
     DatabaseReference databaseReference;
     String userid;
@@ -76,7 +76,7 @@ public class RestaurantHomeFragment extends Fragment {
         userid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("MealDetils");
-                   return  view;
+        return view;
 
 //        private String Mealname;
 //        private String AvailableItem;
@@ -89,8 +89,6 @@ public class RestaurantHomeFragment extends Fragment {
 //        private String EcpiryDate;
 //        return  view;
     }
-
-
 
 
 }

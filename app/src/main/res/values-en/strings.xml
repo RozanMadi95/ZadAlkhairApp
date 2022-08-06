@@ -86,6 +86,48 @@
     <string name="free">free</string>
     <string name="restaurantAddMeal">Add Meal</string>
     <string name="_price">price</string>
-
+    <string name="work">Saturday     9:00 _10:00pm Sunday        9:00 _10:00pm Monday       9:00 _10:00pm Tuesday       9:00 _10:00pm Wednesday  9:00 _10:00pm Thursday      9:00 _10:00pm Friday          5:00 _10:00pm</string>
+    <string name="sanabil">Sanabil</string>
+    <string name="shorma">shorma</string>
+    <string name="sanabil5">5₪</string>
+    <string name="sanabil_Khanyones">Khanyones</string>
+    <string name="sanabil_moqbrlat">moqbrlat</string>
+    <string name="changePassword">Change Password</string>
+    <string name="CurrentPassword">Current password</string>
+    <string name="NewPassword">New password</string>
+    <string name="ConfirmPassword">Confirm password</string>
+    <string name="Update">Update</string>
+    <string name="Logout">Logout</string>
+    <string name="TermsConditions">Terms,Conditions</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="date">10/8/2022</string>
+    <string name="aboutApp">About App</string>
+    <string name="about1">is Place where Food Providers sell surplus food at reduced price to Consumers or donate to Charity Organizations for those in need.</string>
+    <string name="about2">"Z A D Al_Kair at fighting food waste, climate change, and zad hungry at the same time "</string>
+    <string name="terms">
+        <b>Objectives of the application:</b> It aims to provide surplus food or offers and food that is close to its expiry date, in order to reduce the waste of food that is surplus to need or that is nearing its expiry date and is feared to be wasted.
+ The means of this application is to implement these goals by contracting with a number of several restaurants, which in turn will provide through this application meals at lower prices for individuals or free for associations instead of being wasted.
+The application thus displays these food products in the name of the participating restaurants and displays the price of the product after it is displayed on the application, as well as the expiration date.
+Both individuals and associations browse and contact the restaurant to order the product and delivery is by pick-up from the restaurant.
+\n\n
+The foregoing is an integral part of your agreement to our policies and objectives.
+\n\n
+The restaurant is obligated to put the name of the restaurant, the restaurant’s logo, and the contact details with the restaurant from email and phone, as well as the method of payment and delivery, and the expiration date of the product is also added.
+\n\n
+The restaurant is obligated to offer products at prices lower than the normal price or free of charge for associations only.
+This is the main application purpose of reducing food waste. He shall abide by the display of the product with its name attached to it, a copy of the product if any, the price after, an expiry date.
+\n\n
+The health and safety of food before the expiration date is the responsibility of the restaurant fully.
+\n\n
+By registering in our application, you agree to receive an email from us. The goal of our e-mail service is to keep our customers and visitors informed of updates and new releases.
+\n\n
+    </string>
+    <string name="restaurantEditMeals">Edit Meal</string>
+    <string name="restaurant_deleteMeals">Delete Meal</string>
+    <string name="zad_phone">0598798589</string>
+    <string name="gaza">Gaza</string>
+    <string name="zad">Zad</string>
+    <string name="associations">Associations</string>
 
 </resources>

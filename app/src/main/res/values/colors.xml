@@ -22,7 +22,9 @@
     <color name="forgot">#A7CB81</color>
     <color name="background">#EEF0EF</color>
     <color name="itemIconTint">#909E95</color>
+    <color name="itemTint">#434744</color>
     <color name="appBar">#0E4D2E</color>
+    <color name="back">#46A038</color>
     <color name="background_Fragment">#E0EFDD</color>
 
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AboutAppActivity"
+    android:background="@color/background_Fragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_logo"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about1"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="normal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/dark" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about2"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="normal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/dark" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_120sdp"
                 android:scaleType="centerInside"
-                android:src="@drawable/icon_logo"
+                android:src="@drawable/sanabil_meal1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -83,7 +83,7 @@
                 android:id="@+id/details_meals_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/meals_name"
+                android:text="@string/shorma"
                 android:textColor="@color/black"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:textSize="@dimen/_16ssp"
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_12ssp"
-                android:text="@string/price"
+                android:text="@string/sanabil5"
                 android:textColor="@color/orange"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"
@@ -110,8 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:text="@string/restaurant_name"
-                android:textColor="@color/itemIconTint"
+                android:text="@string/sanabil"
+                android:textColor="@color/appBar"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/details_meals_name"
@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Description"
                 android:textColor="@color/black"
-                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:textSize="@dimen/_16ssp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +133,7 @@
                 android:id="@+id/details_meals_TableLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/details_meals_Description">
 
@@ -146,7 +146,7 @@
                         android:layout_weight="1"
                         android:layout_column="1" />
                     <EditText
-                        android:text="@string/available_items"
+                        android:text="@string/number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="start"
@@ -166,7 +166,7 @@
                         android:layout_weight="1"
                         android:layout_column="1" />
                     <EditText
-                        android:text="@string/expiry_date"
+                        android:text="@string/date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="start"
@@ -225,133 +225,23 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Working_Hours"
                 android:textColor="@color/black"
-                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:textSize="@dimen/_16ssp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/details_meals_TableLayout" />
 
-            <TableLayout
-                android:id="@+id/details_meals_TableLayout_Working_Hours"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_12sdp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/details_meals_Working_Hours">
+                <TextView
+                    android:id="@+id/details_meals_work"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:text="@string/work"
+                    android:textColor="@color/itemTint"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_meals_Working_Hours" />
 
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-                <TableRow>
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                    <TextView
-                        android:text="@string/available_items"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="start"
-                        android:layout_weight="1"
-                        android:layout_column="1" />
-                </TableRow>
-            </TableLayout>
+
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/details_meals_Button_Add_to_cart"
@@ -366,7 +256,7 @@
                 android:textColor="@color/white"
                 android:background="@drawable/background_shape"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/details_meals_TableLayout_Working_Hours"/>
+                app:layout_constraintTop_toBottomOf="@+id/details_meals_work"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

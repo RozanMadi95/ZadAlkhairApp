@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    tools:context=".restaurant.RestaurantEditMealsActivity">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageButton
+                    android:id="@+id/addMeals_image_upload"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/camera_btn_shape"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/sanabil_meal2"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addMeals_btnImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera"
+                    app:layout_constraintBottom_toBottomOf="@id/addMeals_image_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.584"
+                    app:layout_constraintStart_toStartOf="@id/addMeals_image_upload"
+                    app:layout_constraintTop_toBottomOf="@id/addMeals_image_upload"
+                    app:layout_constraintVertical_bias="0.696" />
+
+                <View
+                    android:id="@+id/addMeals_view"
+                    android:background="@color/hint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/addMeals_btnImage" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/addMeals_et_Name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/sanabil_moqbrlat"
+                    android:hint="@string/meals_name"
+                    android:inputType="text"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@id/addMeals_view"
+                    app:layout_constraintStart_toStartOf="@id/addMeals_view"
+                    app:layout_constraintTop_toBottomOf="@id/addMeals_view" />
+
+                <TextView
+                    android:id="@+id/addMeals_Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Description"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/addMeals_et_Name"
+                    app:layout_constraintTop_toBottomOf="@id/addMeals_et_Name" />
+
+                <TableLayout
+                    android:id="@+id/addMeals_TableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@id/addMeals_Description"
+                    app:layout_constraintStart_toStartOf="@id/addMeals_Description"
+                    app:layout_constraintTop_toBottomOf="@id/addMeals_Description" >
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/available_items"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1" />
+                        <EditText
+                            android:id="@+id/addMeals_available_items"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="@string/number"
+                            android:layout_weight="1"
+                            android:layout_column="1"
+                            android:autofillHints=""
+                            android:inputType="number"
+                            tools:ignore="LabelFor" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1" />
+                        <EditText
+                            android:id="@+id/addMeals_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="2"
+                            android:layout_weight="1"
+                            android:layout_column="1"
+                            android:autofillHints=""
+                            android:inputType="number"
+                            tools:ignore="LabelFor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/expiry_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1" />
+                        <EditText
+                            android:id="@+id/addMeals_expiry_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:text="@string/date"
+                            android:layout_column="1"
+                            android:autofillHints=""
+                            android:inputType="date"
+                            tools:ignore="LabelFor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/delivery_options"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1" />
+                        <EditText
+                            android:id="@+id/addMeals_delivery_options"
+                            android:text="@string/pick_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1"
+                            android:enabled="false"
+                            android:autofillHints=""
+                            android:inputType="text"
+                            tools:ignore="LabelFor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/payment_options"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1" />
+                        <RadioGroup
+                            android:id="@+id/addMeals_radioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="start"
+                            android:layout_weight="1"
+                            android:layout_column="1">
+                            <RadioButton
+                                android:id="@+id/addMeals_payment_options_Cash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cash"
+                                android:checked="true"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <RadioButton
+                                android:id="@+id/radioFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/free"
+                                android:checked="false"
+                                android:textSize="@dimen/_14ssp" />
+                        </RadioGroup>
+                    </TableRow>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@id/addMeals_TableLayout"
+                        app:layout_constraintStart_toStartOf="@id/addMeals_TableLayout"
+                        app:layout_constraintTop_toBottomOf="@id/addMeals_TableLayout">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_shape"
+                            android:text="@string/restaurantEditMeals"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_shape_dialog_container"
+                            android:text="@string/restaurant_deleteMeals"
+                            android:textColor="@color/normal"
+                            android:textSize="@dimen/_16ssp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </TableLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
